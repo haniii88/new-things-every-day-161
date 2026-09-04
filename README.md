@@ -7,7 +7,7 @@ function dailyLog161() {
     { name: "Plan tomorrow", completed: false }
   ];
 
-  cons completed = tasks.filter(task => task.completed).length;
+  const completed = tasks.filter(task => task.completed).length;
   const pending = tasks.length - completed;
   const completionRate = (completed / tasks.length) * 100;
 
